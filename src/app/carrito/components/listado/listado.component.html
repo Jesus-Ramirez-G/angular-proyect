@@ -1,0 +1,17 @@
+<h2>Listado de productos</h2>
+<ul class="list-group">
+    <li class="list-group-item d-flex justify-content-between" 
+    *ngFor="let producto of productos;
+    let i = index;
+    let first = first;
+    let last = last;
+    let isEven = even;">
+        <div>
+            <span class="badge bg-primary rounded-pill">{{i+1}}</span>
+            <span class="text-primary">{{producto.nombre}}</span>
+            <u>{{producto.descripcion}}</u>
+            $<strong>{{producto.precio}}</strong>
+        </div>
+        <span><button class="btn btn-danger" (click)="eliminarProducto(i)">Eliminar</button></span>
+    </li>
+</ul>

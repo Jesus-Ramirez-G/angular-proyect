@@ -1,0 +1,6 @@
+<h2>Agregar Categoria</h2>
+<form (ngSubmit)="agregarCategoria(form)" #form = "ngForm" class="row">
+    <input type="text" required name="nomCategoria" id="nomCategoria" class="form-control mb-2" placeholder="Nombre" ngModel>
+    <input type="text" required name="descCategoria" id="descCategoria" class="form-control mb-2" placeholder="Descripcion" ngModel>
+    <button type="submit" class="btn btn-primary">Agregar</button>
+</form>

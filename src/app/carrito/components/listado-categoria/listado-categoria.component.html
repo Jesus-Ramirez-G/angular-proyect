@@ -1,0 +1,16 @@
+<h2>Listado de Categorias</h2>
+<ul class="list-group">
+    <li class="list-group-item d-flex justify-content-between" 
+    *ngFor="let categoria of categorias;
+    let i = index;
+    let first = first;
+    let last = last;
+    let isEven = even;">
+        <div>
+            <span class="badge bg-primary rounded-pill">{{i+1}}</span>
+            <span class="text-primary">{{categoria.nombre}}</span>
+            <u>{{categoria.descripcion}}</u>
+        </div>
+        <span><button class="btn btn-danger" (click)="eliminarCategoria(i)">Eliminar</button></span>
+    </li>
+</ul>

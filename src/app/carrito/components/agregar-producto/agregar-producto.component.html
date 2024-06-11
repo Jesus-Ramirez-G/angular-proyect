@@ -1,0 +1,7 @@
+<h2>Agregar producto</h2>
+<form (ngSubmit)="agregarProducto(form)" #form = "ngForm" class="row">
+    <input type="text" required name="nomProducto" id="nomProducto" class="form-control mb-2" placeholder="Nombre" ngModel>
+    <input type="text" required name="descProducto" id="descProducto" class="form-control mb-2" placeholder="Descripcion" ngModel>
+    <input type="text" required name="precProducto" id="precProducto" class="form-control mb-2" placeholder="Precio" ngModel>
+    <button type="submit" class="btn btn-primary">Agregar</button>
+</form>

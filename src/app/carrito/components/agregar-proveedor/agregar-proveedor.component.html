@@ -1,0 +1,8 @@
+<h2>Agregar proveedor</h2>
+<form (ngSubmit)="agregarProveedor(form)" #form = "ngForm" class="row">
+    <input type="text" required name="nomProv" id="nomProv" class="form-control mb-2" placeholder="Nombre" ngModel>
+    <input type="text" required name="tipoProv" id="tipoProv" class="form-control mb-2" placeholder="Tipo" ngModel>
+    <input type="text" required name="telProv" id="telProv" class="form-control mb-2" placeholder="Telefono" ngModel>
+    <input type="text" required name="emailProv" id="emailProv" class="form-control mb-2" placeholder="Correo" ngModel>
+    <button type="submit" class="btn btn-primary">Agregar</button>
+</form>
